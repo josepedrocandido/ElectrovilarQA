@@ -410,6 +410,11 @@ hr {
   text-align: center;
   overflow: auto; }
 
+.landingInfo {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal; }
+
 .main-nav {
   display: flex;
   align-items: center;
