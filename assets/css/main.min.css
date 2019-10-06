@@ -412,10 +412,12 @@ hr {
 .landingInfo {
   margin-top: 300px; }
 
+ul {
+  margin: 0; }
+
 .main-nav {
   display: flex;
-  align-items: center;
-  margin-top: 20px; }
+  align-items: center; }
   .main-nav li {
     list-style: none; }
   .main-nav li:first-child {
@@ -423,11 +425,20 @@ hr {
   .main-nav a {
     color: white;
     display: block;
-    padding: 15px 30px;
+    padding: 10px 30px;
     font-size: 20px; }
   @media only screen and (max-width: 680px) {
     .main-nav {
       display: none; } }
+
+.fixNav {
+  background-color: #262525;
+  opacity: 0.93;
+  box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.31);
+  position: sticky;
+  top: 0;
+  margin-top: 0px;
+  z-index: 1; }
 
 .oportunidades {
   background: #FCFCFC;
