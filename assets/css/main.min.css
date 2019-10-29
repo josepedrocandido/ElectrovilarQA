@@ -227,6 +227,13 @@ input[type="button"] {
   cursor: pointer;
   box-sizing: border-box;
   transition: all 0.2s ease; }
+  @media only screen and (max-width: 680px) {
+    .button,
+    button,
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"] {
+      padding: 2px 20px; } }
   .button:hover, .button:active, .button:focus,
   button:hover,
   button:active,
@@ -282,7 +289,9 @@ img::-moz-selection {
   margin-bottom: 40px; }
   @media only screen and (max-width: 680px) {
     .electrovilarSlogan {
-      font-size: 30px; } }
+      font-size: 25px;
+      padding-left: 20px;
+      padding-right: 20px; } }
 
 .sectionTitle {
   color: #262525;
@@ -291,7 +300,8 @@ img::-moz-selection {
   margin-top: 200px; }
   @media only screen and (max-width: 680px) {
     .sectionTitle {
-      font-size: 30px; } }
+      font-size: 30px;
+      margin-top: 90px; } }
 
 .productTitle {
   color: white;
@@ -311,6 +321,7 @@ img::-moz-selection {
   line-height: 50px; }
   @media only screen and (max-width: 680px) {
     .newsletterText {
+      line-height: 30px;
       font-size: 20px; } }
 
 .productTag {
@@ -468,7 +479,7 @@ hr {
     opacity: 1; }
   .mobileNavBar li a {
     display: block;
-    padding: 17px 20px;
+    padding: 20px 20px;
     border-top: 1px solid #4D4D4D;
     color: white;
     font-size: 16px; }
@@ -555,6 +566,9 @@ hr {
 
 .landingInfo {
   margin-top: 300px; }
+  @media only screen and (max-width: 680px) {
+    .landingInfo {
+      margin-top: 200px; } }
 
 ul {
   margin: 0;
@@ -589,7 +603,8 @@ ul {
   @media only screen and (max-width: 680px) {
     .smallProducts {
       display: block;
-      margin: 20px; } }
+      margin: 20px;
+      padding-bottom: 20px; } }
 
 .prod1 {
   background: linear-gradient(to bottom, rgba(38, 37, 37, 0.2), rgba(77, 77, 77, 0.4)), url("../img/silicones.jpg") no-repeat; }
@@ -629,6 +644,9 @@ ul {
 .sobreText {
   text-align: justify;
   padding-bottom: 90px; }
+  @media only screen and (max-width: 680px) {
+    .sobreText {
+      padding-bottom: 20px; } }
 
 @media only screen and (max-width: 680px) {
   .item {
@@ -648,15 +666,15 @@ ul {
   background: url("../img/newsletter.jpg") no-repeat;
   background-size: cover;
   overflow: auto;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
+  height: 350px; }
   @media only screen and (max-width: 680px) {
     .newsletterBck {
-      height: 119px; } }
+      height: 119px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; } }
 
 button a {
   color: black; }
@@ -708,7 +726,6 @@ button a:hover {
   padding-bottom: 90px; }
   @media only screen and (max-width: 680px) {
     .productsPart {
-      margin-bottom: 20px;
       padding-bottom: 20px; } }
 
 .productImg {
@@ -739,6 +756,7 @@ button a:hover {
   padding-bottom: 90px; }
   @media only screen and (max-width: 680px) {
     .jobsCards {
+      padding-bottom: 8px;
       margin-left: 20px;
       grid-template-columns: repeat(1000, auto); } }
 
