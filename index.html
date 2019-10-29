@@ -6,9 +6,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/css/main.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
+
+  <nav class="mobileNavBar">
+    <a href="#home"><img class="logoPadding" src="./assets/img/logoMobileNavBar3.svg" height="25"></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#obras">Obras</a></li>
+      <li><a href="#contactos">Contactos</a></li>
+    </ul>
+  </nav>
+
   <!-- Home Section -->
   <section id="home" class="home">
     <div class="wrapper">
@@ -22,7 +38,7 @@
       </nav>
       <div class="landingInfo">
         <h1 class="electrovilarTitle">Electrovilar</h1>
-        <p class="electrovilarSlogan">Parceiros do <b>ambiente.</b></p>
+        <p class="electrovilarSlogan">As melhores <b>obras</b> com os melhores <b>produtos.</b></p>
         <a href="https://www.facebook.com/electrovilar.pt" target="_blank" class"facebookLogo"><svg width="35px" height="34px" viewBox="0 0 35 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="HFP---Validated" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
               <g id="Proposta-Final-Copy-2" transform="translate(-681.000000, -586.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -69,13 +85,16 @@
   <nav class="fixNav" id="second-navbar">
     <div class="wrapperNav">
       <ul class="main-nav">
-        <li><a href="#home"><img src="./assets/img/LandingPage.svg" height="70"></a></li>
+        <li><a class="noLeftPadding" href="#home"><img src="./assets/img/LandingPage.svg" height="70"></a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#produtos">Produtos</a></li>
         <li><a href="#obras">Obras</a></li>
         <li><a class="noRightPadding" href="#contactos">Contactos</a></li>
+      </ul>
     </div>
   </nav>
+
+
 
   <!-- Oportunidades Section -->
   <section class="oportunidades">
@@ -135,7 +154,7 @@
           <div class="productItem">
             <img src="./assets/img/electrecidade.svg" alt="Venda de Produtos" height="170">
           </div>
-          <h1 class="serviceTextTitle">Electrecidade</h1>
+          <h1 class="serviceTextTitle">Electricidade</h1>
         </div>
       </div>
       <hr>
@@ -149,6 +168,7 @@
       </p>
     </div>
   </section>
+
 
 
   <section id="produtos" class="products">
@@ -226,12 +246,11 @@
     </div>
   </section>
 
-  <section class="newsletterBck"
-    <div class="wrapper">
-      <div class="newsletter">
-        <h1 class="newsletterText">Subscreva a nossa <b>Newsletter</b></h1>
-        <button type="button" name="button"><a href="https://mailchi.mp/40ef32bd0d3a/electrovilar" target="_blank">Subscrever</a></button>
-      </div>
+  <section class="newsletterBck" <div class="wrapper">
+    <div class="newsletter">
+      <h1 class="newsletterText">Subscreva a nossa <b>Newsletter</b></h1>
+      <button type="button" name="button"><a href="https://mailchi.mp/40ef32bd0d3a/electrovilar" target="_blank">Subscrever</a></button>
+    </div>
     </div>
   </section>
 
@@ -287,6 +306,10 @@
   </section>
 
 
+
+
+
+
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/app.js"></script>
 
@@ -295,12 +318,16 @@
     var element = document.getElementById("second-navbar");
     window.addEventListener("scroll", function() {
       if (window.scrollY > height) {
-        element.style.opacity = "0.93";
+        element.style.opacity = "1";
       } else if (window.scrollY <= height) {
         element.style.opacity = "0";
       }
     });
   </script>
+
+
+
+
 
 
 
