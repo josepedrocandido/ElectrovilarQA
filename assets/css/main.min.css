@@ -280,7 +280,7 @@ img::-moz-selection {
   line-height: 30px; }
   @media only screen and (max-width: 680px) {
     .electrovilarTitle {
-      font-size: 40px; } }
+      display: none; } }
 
 .electrovilarSlogan {
   color: white;
@@ -569,11 +569,17 @@ hr {
   margin-top: 300px; }
   @media only screen and (max-width: 680px) {
     .landingInfo {
-      margin-top: 200px; } }
+      margin-top: 160px; } }
 
 ul {
   margin: 0;
   padding: 0; }
+
+.electrovilarLogo {
+  display: none; }
+  @media only screen and (max-width: 680px) {
+    .electrovilarLogo {
+      display: inline; } }
 
 .oportunidades {
   background: #e2e2e247;
@@ -727,7 +733,7 @@ button a:hover {
   padding-bottom: 90px; }
   @media only screen and (max-width: 680px) {
     .productsPart {
-      padding-bottom: 20px; } }
+      padding-bottom: 30px; } }
 
 .productImg {
   border-radius: 8px;
@@ -757,7 +763,7 @@ button a:hover {
   padding-bottom: 90px; }
   @media only screen and (max-width: 680px) {
     .jobsCards {
-      padding-bottom: 8px;
+      padding-bottom: 15px;
       margin-left: 20px;
       grid-template-columns: repeat(1000, auto); } }
 
