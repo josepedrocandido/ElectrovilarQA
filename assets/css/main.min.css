@@ -490,12 +490,6 @@ hr {
   .mobileNavBar li a:hover,
   .mobileNavBar .menu-btn:hover {
     background-color: #4D4D4D; }
-  .mobileNavBar .logo {
-    display: block;
-    float: left;
-    font-size: 2em;
-    padding: 10px 20px;
-    text-decoration: none; }
   /* menu */
   .mobileNavBar .menu {
     clear: both;
