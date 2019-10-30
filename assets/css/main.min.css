@@ -234,7 +234,7 @@ input[type="button"] {
     input[type="submit"],
     input[type="reset"],
     input[type="button"] {
-      padding: 2px 20px; } }
+      padding: 6px 30px; } }
   .button:hover, .button:active, .button:focus,
   button:hover,
   button:active,
@@ -579,6 +579,9 @@ ul {
     .electrovilarLogo {
       display: block;
       padding-bottom: 30px; } }
+
+.facebookLogo {
+  padding: 10px; }
 
 .oportunidades {
   background: #e2e2e247;
