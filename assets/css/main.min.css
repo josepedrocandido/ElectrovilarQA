@@ -288,6 +288,11 @@ img::-moz-selection {
   font-size: 45px;
   line-height: 30px;
   margin-bottom: 40px; }
+  .electrovilarSlogan a {
+    color: white; }
+  .electrovilarSlogan a:hover {
+    opacity: 0.8;
+    transition: 0.3s; }
   @media only screen and (max-width: 680px) {
     .electrovilarSlogan {
       display: none; } }
@@ -580,8 +585,12 @@ ul {
       display: block;
       padding-bottom: 30px; } }
 
-.facebookLogo {
-  padding: 10px; }
+.facebookLogo, .instagramLogo {
+  padding: 5px; }
+
+.facebookLogo:hover, .instagramLogo:hover {
+  opacity: 0.8;
+  transition: 0.3s; }
 
 .oportunidades {
   background: #e2e2e247;
@@ -716,6 +725,9 @@ button a:hover {
 
 .item a {
   color: #262525; }
+  @media only screen and (max-width: 680px) {
+    .item a {
+      text-decoration: underline; } }
 
 .item a:hover {
   text-decoration: underline;
