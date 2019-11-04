@@ -860,7 +860,8 @@ button a:hover {
     .modal {
       padding: 0px 20px;
       background-color: white;
-      background-color: white; } }
+      background-color: white;
+      position: fixed; } }
 
 /* Modal Content */
 @media only screen and (min-width: 680px) {
