@@ -858,22 +858,19 @@ button a:hover {
   background-color: rgba(0, 0, 0, 0.6); }
   @media only screen and (max-width: 680px) {
     .modal {
-      padding: 20px;
-      background-color: #010101; } }
+      padding: 0px 20px;
+      background-color: white;
+      background-color: white; } }
 
 /* Modal Content */
-.modal-content {
-  width: 960px;
-  height: auto;
-  border-radius: 8px;
-  background-color: white;
-  margin: auto;
-  padding: 0px; }
-  @media only screen and (max-width: 680px) {
-    .modal-content {
-      width: 100%;
-      height: auto;
-      border-radius: 0px; } }
+@media only screen and (min-width: 680px) {
+  .modal-content {
+    width: 960px;
+    height: auto;
+    border-radius: 8px;
+    background-color: white;
+    margin: auto;
+    padding: 0px; } }
 
 .photoTitle {
   grid-area: photoTitle; }
