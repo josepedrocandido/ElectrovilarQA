@@ -87,7 +87,7 @@
 
     <nav class="fixNav" id="second-navbar">
       <div class="wrapperNav">
-        <ul class="main-nav">
+        <ul id="main-nav" class="main-nav">
           <li><a class="noLeftPadding" href="#home"><img src="./assets/img/LandingPage.svg" height="70"></a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#produtos">Produtos</a></li>
@@ -308,7 +308,7 @@
     </div>
   </section>
 
-</div>
+  </div>
   <!-- <div class="numbertext">1 / 6</div> -->
 
 
@@ -447,6 +447,58 @@
       document.getElementById("menu-btn").click();
     }
   </script>
+
+  <script>
+    // Cache selectors
+    var lastId,
+      topMenu = $("#main-nav"),
+      topMenuHeight = topMenu.outerHeight() + 15,
+      // All list items
+      menuItems = topMenu.find("a"),
+      // Anchors corresponding to menu items
+      scrollItems = menuItems.map(function() {
+        var item = $($(this).attr("href"));
+        if (item.length) {
+          return item;
+        }
+      });
+
+    // Bind click handler to menu items
+    // so we can get a fancy scroll animation
+    menuItems.click(function(e) {
+      var href = $(this).attr("href"),
+        offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+      $('html, body').stop().animate({
+        scrollTop: offsetTop
+      }, 300);
+      e.preventDefault();
+    });
+
+    // Bind to scroll
+    $(window).scroll(function() {
+      // Get container scroll position
+      var fromTop = $(this).scrollTop() + topMenuHeight;
+
+      // Get id of current scroll item
+      var cur = scrollItems.map(function() {
+        if ($(this).offset().top < fromTop)
+          return this;
+      });
+      // Get the id of the current element
+      cur = cur[cur.length - 1];
+      var id = cur && cur.length ? cur[0].id : "";
+
+      if (lastId !== id) {
+        lastId = id;
+        // Set/remove active class
+        menuItems
+          .parent().removeClass("active")
+          .end().filter("[href='#" + id + "']").parent().addClass("active");
+      }
+    });
+  </script>
+
+
 </body>
 
 </html>
