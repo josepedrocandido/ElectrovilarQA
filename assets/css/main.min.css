@@ -263,7 +263,8 @@ section {
 button,
 input[type="submit"],
 input[type="reset"],
-input[type="button"] {
+input[type="button"],
+input[type="checkbox"] {
   display: inline-block;
   padding: 6px 39px;
   color: black;
@@ -283,7 +284,8 @@ input[type="button"] {
     button,
     input[type="submit"],
     input[type="reset"],
-    input[type="button"] {
+    input[type="button"],
+    input[type="checkbox"] {
       padding: 6px 30px; } }
   .button:hover, .button:active, .button:focus,
   button:hover,
@@ -297,7 +299,10 @@ input[type="button"] {
   input[type="reset"]:focus,
   input[type="button"]:hover,
   input[type="button"]:active,
-  input[type="button"]:focus {
+  input[type="button"]:focus,
+  input[type="checkbox"]:hover,
+  input[type="checkbox"]:active,
+  input[type="checkbox"]:focus {
     opacity: 0.9;
     outline: 0;
     transform: scale(1.01);
@@ -343,6 +348,9 @@ img::selection {
 
 img::-moz-selection {
   background: transparent; }
+
+body {
+  -webkit-tap-highlight-color: transparent; }
 
 .sectionTitle {
   color: #262525;
@@ -600,7 +608,7 @@ strong {
   .mobileNavBar .menu {
     clear: both;
     max-height: 0;
-    transition: max-height .2s ease-out; }
+    transition: max-height .3s ease-out; }
   /* menu icon */
   .mobileNavBar .menu-icon {
     cursor: pointer;
