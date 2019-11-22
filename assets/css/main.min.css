@@ -257,7 +257,13 @@ body {
       max-width: 280px; } }
 
 section {
-  display: -webkit-box; }
+  display: -webkit-box;
+  padding: 100px 0px;
+  text-align: center;
+  overflow: auto; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    section {
+      padding: 50px 0px; } }
 
 .button,
 button,
@@ -352,26 +358,6 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: transparent; }
 
-.sectionTitle {
-  color: #262525;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 60px;
-  margin-top: 200px; }
-  @media only screen and (max-width: 680px) {
-    .sectionTitle {
-      font-size: 30px;
-      margin-top: 90px; } }
-
-.productTitle {
-  color: white;
-  font-family: 'Roboto-Medium', sans-serif;
-  font-weight: 500;
-  font-size: 50px;
-  line-height: 0px; }
-  @media only screen and (max-width: 680px) {
-    .productTitle {
-      font-size: 20px; } }
-
 .newsletterText {
   color: white;
   font-family: 'Roboto-Medium', sans-serif;
@@ -382,36 +368,6 @@ body {
     .newsletterText {
       line-height: 40px;
       font-size: 20px; } }
-
-.productTag {
-  color: white;
-  font-family: 'Roboto-Regular', sans-serif;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 0px; }
-  @media only screen and (max-width: 680px) {
-    .productTag {
-      font-size: 15px; } }
-
-.smallProductTitle {
-  color: white;
-  font-family: 'Roboto-Medium', sans-serif;
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 0px; }
-  @media only screen and (max-width: 680px) {
-    .smallProductTitle {
-      font-size: 20px; } }
-
-.smallProductTag {
-  color: white;
-  font-family: 'Roboto-Regular', sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 0px; }
-  @media only screen and (max-width: 680px) {
-    .smallProductTag {
-      font-size: 15px; } }
 
 .serviceTextTitle {
   color: #262525;
@@ -493,19 +449,24 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 30px; } }
 
 .bigger, h3 {
-  font-family: 'Roboto-Light', sans-serif;
-  font-size: 26px;
-  line-height: 1.38; }
+  font-family: 'Roboto-Medium', sans-serif;
+  font-size: 50px;
+  line-height: 0px;
+  font-weight: 500;
+  color: #fff; }
   @media only screen and (max-width: 680px) {
     .bigger, h3 {
       font-size: 22px; } }
 
 .big, h4 {
-  font-size: 22px;
-  line-height: 1.38; }
+  font-size: 35px;
+  line-height: 1.38;
+  font-weight: 400;
+  line-height: 0px;
+  color: #fff; }
   @media only screen and (max-width: 680px) {
     .big, h4 {
-      font-size: 18px; } }
+      font-size: 15px; } }
 
 .small, small {
   font-size: 10px;
@@ -530,6 +491,29 @@ strong {
   @media only screen and (max-width: 680px), (max-height: 414px) {
     .company-slogan {
       display: none; } }
+
+.sectionTitle {
+  color: #262525;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  line-height: 0px;
+  margin-bottom: 100px; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .sectionTitle {
+      font-size: 30px;
+      margin-bottom: 50px; } }
+
+.smallProductTitle {
+  font-size: 35px; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .smallProductTitle {
+      font-size: 20px; } }
+
+.smallProductTag {
+  font-size: 22px; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .smallProductTag {
+      font-size: 15px; } }
 
 .main-nav {
   display: flex;
@@ -675,7 +659,8 @@ strong {
   height: 100vh;
   overflow: auto;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 0px; }
 
 .landing-page {
   height: 100%;
@@ -719,10 +704,7 @@ strong {
   transition: 0.3s; }
 
 .oportunidades {
-  background: #e2e2e247;
-  text-align: center;
-  overflow: auto;
-  display: block; }
+  background: #e2e2e247; }
 
 .productDesc {
   padding-left: 20px;
@@ -735,20 +717,14 @@ strong {
   background: linear-gradient(to bottom, rgba(38, 37, 37, 0.2), rgba(77, 77, 77, 0.4)), url("../img/massaQuilo.jpg") no-repeat;
   background-size: cover;
   border-radius: 8px; }
-  @media only screen and (max-width: 680px) {
-    .mainProduct {
-      margin: 20px; } }
 
 .smallProducts {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  padding-bottom: 90px; }
+  margin-top: 20px; }
   @media only screen and (max-width: 680px) {
     .smallProducts {
-      display: block;
-      margin: 20px;
-      padding-bottom: 20px; } }
+      display: block; } }
 
 .prod1 {
   background: linear-gradient(to bottom, rgba(38, 37, 37, 0.2), rgba(77, 77, 77, 0.4)), url("../img/silicones.jpg") no-repeat; }
