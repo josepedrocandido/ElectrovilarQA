@@ -709,6 +709,9 @@ strong {
 .productDesc {
   padding-left: 20px;
   text-align: left; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .productDesc {
+      padding-left: 10px; } }
 
 .mainProduct {
   display: flex;
@@ -722,7 +725,7 @@ strong {
   display: flex;
   justify-content: space-between;
   margin-top: 20px; }
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 680px), (max-height: 414px) {
     .smallProducts {
       display: block; } }
 
@@ -739,7 +742,7 @@ strong {
   background-size: cover;
   border-radius: 8px;
   height: 350px; }
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 680px), (max-height: 414px) {
     .smallProduct {
       width: 100%;
       margin-top: 20px; } }
