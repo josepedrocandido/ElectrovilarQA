@@ -487,8 +487,11 @@ strong {
   margin-bottom: 100px; }
   @media only screen and (max-width: 680px), (max-height: 414px) {
     .sectionTitle {
-      font-size: 32px;
+      font-size: 30px;
       margin-bottom: 50px; } }
+  @media only screen and (max-width: 680px) and (max-width: 330px), only screen and (max-height: 414px) and (max-width: 330px) {
+    .sectionTitle {
+      line-height: 35px; } }
 
 .smallProductTitle {
   font-size: 35px; }
@@ -833,32 +836,27 @@ button a:hover {
 
 .products {
   background: #e2e2e247;
-  text-align: center;
-  overflow: auto; }
+  padding-bottom: 0px; }
 
 .productsPart {
   background: #e2e2e247;
-  overflow: auto;
-  padding-bottom: 90px; }
-  @media only screen and (max-width: 680px) {
-    .productsPart {
-      padding-bottom: 30px; } }
-
-.productImg {
-  border-radius: 8px;
-  width: 350px; }
-  @media only screen and (max-width: 680px) {
-    .productImg {
-      width: 200px; } }
+  padding-top: 0px; }
 
 .productsImage {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 20px; }
-  @media only screen and (max-width: 680px) {
+  grid-gap: 20px;
+  justify-items: center; }
+  @media only screen and (max-width: 1024px) {
     .productsImage {
-      margin-left: 20px;
       grid-template-columns: repeat(1000, auto); } }
+
+.productImg {
+  border-radius: 8px;
+  width: 350px; }
+  @media only screen and (max-width: 680px), (max-height: 414px) {
+    .productImg {
+      width: 200px; } }
 
 .jobs {
   background: #e2e2e247;
