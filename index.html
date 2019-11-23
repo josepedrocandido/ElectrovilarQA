@@ -199,69 +199,58 @@
       <div class="store"></div>
     </section>
 
+  <!-- Obras Section -->
     <section id="obras" class="jobs">
       <div class="wrapper">
         <h2 class="sectionTitle Prod">Os Nossos Trabalhos</h2>
       </div>
     </section>
 
-    <section class="jobs">
+    <section class="jobsParts">
       <div class="wrapper">
         <div class="jobsCards">
-          <article class="c-card" id="myBtn">
+          <article class="c-card" id="card1">
             <header class="c-card__header">
-              <img src="./assets/img/job.jpg" class="c-card__image" alt="Card Image" />
+              <img src="./assets/img/obras1-100.jpg" class="c-card__image" alt="Card Image" />
             </header>
             <div class="c-card__body">
               <h2 class="c-card__title">
-                Prédio Obra
+                Parque Solar
               </h2>
               <p class="c-card__subtitle">
-                França - Paris
+                Martim Longo - Alcoutim
               </p>
             </div>
           </article>
-          <article class="c-card">
+
+          <article class="c-card" id="card2">
             <header class="c-card__header">
-              <img src="./assets/img/job.jpg" class="c-card__image" alt="Card Image" />
+              <img src="./assets/img/obra4.png" class="c-card__image" alt="Card Image" />
             </header>
             <div class="c-card__body">
               <h2 class="c-card__title">
-                Supermercado
+                Carrefour Market
               </h2>
               <p class="c-card__subtitle">
-                França - Paris
+                 Fuentes de Oñoro
               </p>
             </div>
           </article>
-          <article class="c-card">
-            <header class="c-card__header">
-              <img src="./assets/img/job.jpg" class="c-card__image" alt="Card Image" />
-            </header>
-            <div class="c-card__body">
-              <h2 class="c-card__title">
-                Prédio Obra
-              </h2>
-              <p class="c-card__subtitle">
-                França - Paris
-              </p>
-            </div>
-          </article>
+
         </div>
       </div>
     </section>
 
-    <section class="newsletterBck" <div class="wrapper">
+    <section id="contactos" class="newsletterBck">
       <div class="newsletter">
         <h1 class="newsletterText">Subscreva a nossa <b>Newsletter</b></h1>
         <button type="button" name="button"><a href="https://mailchi.mp/40ef32bd0d3a/electrovilar" target="_blank">Subscrever</a></button>
       </div>
-  </div>
   </section>
 
 
-
-  <section id="contactos" class="contactSection">
+<!-- Contactos Section -->
+  <section class="contactSection">
     <div class="wrapper">
       <h2 class="sectionTitle">Contactos</h2>
       <div class="contacts">
@@ -314,7 +303,7 @@
   <!-- <div class="numbertext">1 / 6</div> -->
 
 
-  <div id="myModal" class="modal">
+  <div id="modalc1" class="modal">
     <!-- Modal content -->
     <div class="modal-content wrapper">
       <div class="grid-container">
@@ -346,6 +335,40 @@
           cedo a sua apetência para o cruzamento de serviços com o mercado
           internacional, nomeadamente com a Espanha. Esse facto tem sido
           reforçado com o desenvolvimento crecente das energias renováveis.
+        </p>
+        <button class="close closeG backButton" type="" name="">Voltar</button>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="modalc2" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content wrapper">
+      <div class="grid-container">
+        <h2 class="photoTitle">Parque Solar Martim Longo</h2>
+        <!-- <span class="close closeG">&times;</span> -->
+        <a class="prev leftA" onclick="plusSlides(-1)">❮</a>
+        <a class="next rightA" onclick="plusSlides(1)">❯</a>
+
+        <div class="mainImage">
+          <div class="mySlides">
+            <img class="mImage" src="./assets/img/obra4.png">
+          </div>
+        </div>
+
+        <div class="mainImage">
+          <div class="mySlides">
+            <img class="mImage" src="./assets/img/obras2-100.jpg">
+          </div>
+        </div>
+
+        <div class="photosGallery photosGalleryG">
+          <div><img class="demo cursor" src="./assets/img/obras1-100.jpg" style="height:100%" onclick="currentSlide(1)" alt="The Woods"></div>
+          <div><img class="demo cursor" src="./assets/img/obras2-100.jpg" style="height:100%" onclick="currentSlide(2)" alt="The Woods"></div>
+        </div>
+        <p class="textG">
+          A Electrovilar é uma.
         </p>
         <button class="close closeG backButton" type="" name="">Voltar</button>
 
@@ -396,10 +419,12 @@
 
   <script>
     // Get the modal
-    var modal = document.getElementById("myModal");
+    var modalc1 = document.getElementById("modalc1");
+    var modalc2 = document.getElementById("modalc2");
 
     // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+    var c1 = document.getElementById("card1");
+    var c2 = document.getElementById("card2");
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
@@ -407,19 +432,25 @@
     var page = document.getElementById("page");
 
     // When the user clicks the button, open the modal
-    btn.onclick = function() {
-      modal.style.display = "block";
+    c1.onclick = function() {
+      modalc1.style.display = "block";
+    }
+
+    c2.onclick = function() {
+      modalc2.style.display = "block";
     }
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
-      modal.style.display = "none";
+      modalc1.style.display = "none";
     }
+
+
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
+      if (event.target == modalc1) {
+        modalc1.style.display = "none";
       }
     }
   </script>
@@ -513,19 +544,6 @@
           .end().filter("[href='#" + id + "']").parent().addClass("active");
       }
     });
-
-
-
-
-
-    // function myFunction() {
-    //   console.log("ola");
-    //   var wrapperSize = screen.width - 40;
-    //   console.log(wrapperSize);
-    //   var final = wrapperSize + "px";
-    //   console.log(final);
-    //   document.getElementsByClassName("wrapper").style.maxWidth = final;
-    // }
   </script>
 
 

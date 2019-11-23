@@ -537,7 +537,8 @@ strong {
   box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.31);
   display: none;
   -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s; }
+  transition: opacity 0.4s;
+  z-index: 1; }
 
 .main-nav-fix {
   justify-content: flex-end; }
@@ -803,27 +804,28 @@ button a:hover {
   text-align: center; }
 
 .contactSection {
-  background: white;
-  text-align: center;
-  overflow: auto;
-  margin-bottom: 220px; }
+  background: white; }
 
 .contacts {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px; }
-  @media only screen and (max-width: 680px) {
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 415px) {
     .contacts {
-      display: block;
-      margin: 20px; } }
+      display: block; } }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 680px), (max-height: 414px) {
   .item {
     margin-bottom: 65px; } }
 
+@media only screen and (max-height: 414px), (max-width: 900px) and (min-width: 680px) {
+  .item {
+    margin-bottom: 65px;
+    width: 50%; } }
+
 .item a {
   color: #262525; }
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 680px), (max-height: 414px), (max-width: 768px) {
     .item a {
       text-decoration: underline; } }
 
@@ -860,25 +862,26 @@ button a:hover {
 
 .jobs {
   background: #e2e2e247;
-  text-align: center;
-  overflow: auto; }
+  padding-bottom: 0px; }
+
+.jobsParts {
+  background: #e2e2e247;
+  padding-top: 0px; }
 
 .jobsCards {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   grid-gap: 20px;
-  padding-bottom: 90px;
-  padding-top: 5px; }
-  @media only screen and (max-width: 680px) {
+  justify-items: center; }
+  @media only screen and (max-width: 1024px) {
     .jobsCards {
-      padding-bottom: 15px;
-      margin-left: 20px;
       grid-template-columns: repeat(1000, auto); } }
 
 .c-card {
   width: 350px;
   height: 450px;
   margin-bottom: 20px;
+  margin-top: 20px;
   border-radius: 8px;
   transition: all 0.3s ease;
   text-align: left;
@@ -1028,6 +1031,13 @@ button a:hover {
 .photosGallery > div {
   height: 100px;
   margin-right: 10px; }
+
+.demo {
+  opacity: 0.5; }
+
+.active,
+.demo:hover {
+  opacity: 1; }
 
 /* The Close Button */
 /* Add a pointer when hovering over the thumbnail images */
