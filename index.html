@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div id="page">
+
 
 
     <nav class="mobileNavBar">
@@ -209,6 +209,7 @@
     <section class="jobsParts">
       <div class="wrapper">
         <div class="jobsCards">
+          <!-- Card 1 -->
           <article class="c-card" id="card1">
             <header class="c-card__header">
               <img src="./assets/img/obras1-100.jpg" class="c-card__image" alt="Card Image" />
@@ -223,6 +224,7 @@
             </div>
           </article>
 
+          <!-- Card 2 -->
           <article class="c-card" id="card2">
             <header class="c-card__header">
               <img src="./assets/img/obra4.png" class="c-card__image" alt="Card Image" />
@@ -237,13 +239,28 @@
             </div>
           </article>
 
+          <!-- Card 3 -->
+          <article class="c-card" id="card3">
+            <header class="c-card__header">
+              <img src="./assets/img/torre.jpg" class="c-card__image" alt="Card Image" />
+            </header>
+            <div class="c-card__body">
+              <h2 class="c-card__title">
+              Torre de Iluminação
+              </h2>
+              <p class="c-card__subtitle">
+                 Vilar Formoso
+              </p>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
     <section id="contactos" class="newsletterBck">
       <div class="newsletter">
-        <h1 class="newsletterText">Subscreva a nossa <b>Newsletter</b></h1>
+        <h3 class="newsletterText">Subscreva a nossa <b>Newsletter</b></h3>
         <button type="button" name="button"><a href="https://mailchi.mp/40ef32bd0d3a/electrovilar" target="_blank">Subscrever</a></button>
       </div>
   </section>
@@ -295,12 +312,13 @@
 
   <section class="footer">
     <div class="wrapper">
-      <p class="footerText">Copy Right 2019 © By Electrovilar</p>
+      <p class="footerText">
+        Copyright © 2020 Electrovilar. Todos os direitos reservados. | Designed by <a href="#">José Cândido</a> in Lisbon.</p>
     </div>
   </section>
 
-  </div>
-  <!-- <div class="numbertext">1 / 6</div> -->
+
+
 
 
   <div id="modalc1" class="modal">
@@ -336,7 +354,7 @@
           internacional, nomeadamente com a Espanha. Esse facto tem sido
           reforçado com o desenvolvimento crecente das energias renováveis.
         </p>
-        <button class="close closeG backButton" type="" name="">Voltar</button>
+        <button class="closec1 closeG backButton" type="" name="">Voltar</button>
 
       </div>
     </div>
@@ -346,106 +364,87 @@
     <!-- Modal content -->
     <div class="modal-content wrapper">
       <div class="grid-container">
-        <h2 class="photoTitle">Parque Solar Martim Longo</h2>
-        <!-- <span class="close closeG">&times;</span> -->
-        <a class="prev leftA" onclick="plusSlides(-1)">❮</a>
-        <a class="next rightA" onclick="plusSlides(1)">❯</a>
+        <h2 class="photoTitle">Carrefour Market</h2>
 
         <div class="mainImage">
-          <div class="mySlides">
-            <img class="mImage" src="./assets/img/obra4.png">
-          </div>
-        </div>
-
-        <div class="mainImage">
-          <div class="mySlides">
-            <img class="mImage" src="./assets/img/obras2-100.jpg">
-          </div>
+            <img class="mImage" src="./assets/img/obra3.jpg">
         </div>
 
         <div class="photosGallery photosGalleryG">
-          <div><img class="demo cursor" src="./assets/img/obras1-100.jpg" style="height:100%" onclick="currentSlide(1)" alt="The Woods"></div>
-          <div><img class="demo cursor" src="./assets/img/obras2-100.jpg" style="height:100%" onclick="currentSlide(2)" alt="The Woods"></div>
+          <div><img class="demo cursor" src="./assets/img/obra3.jpg" style="height:100%; opacity: 1;" onclick="currentSlide(1)" alt="The Woods"></div>
         </div>
         <p class="textG">
-          A Electrovilar é uma.
+          Carrefour Market (...)
         </p>
-        <button class="close closeG backButton" type="" name="">Voltar</button>
+        <button class="closec2 closeG backButton" type="" name="">Voltar</button>
 
       </div>
     </div>
   </div>
 
-  <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
+  <div id="modalc3" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content wrapper">
+      <div class="grid-container">
+        <h2 class="photoTitle">Torre de Iluminação</h2>
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
+        <div class="mainImage">
+            <img class="mImage" src="./assets/img/torre.jpg">
+        </div>
 
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
+        <div class="photosGallery photosGalleryG">
+          <div><img class="demo cursor" src="./assets/img/torre.jpg" style="height:100%; opacity: 1;" onclick="currentSlide(1)" alt="The Woods"></div>
+        </div>
+        <p class="textG">
+          Carrefour Market (...)
+        </p>
+        <button class="closec3 closeG backButton" type="" name="">Voltar</button>
 
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      if (n > slides.length) {
-        slideIndex = 1
-      }
-      if (n < 1) {
-        slideIndex = slides.length
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-  </script>
+      </div>
+    </div>
+  </div>
 
-
-
-  <!-- .............................................................. -->
-  <!-- .............................................................. -->
-  <!-- .............................................................. -->
-  <!-- .............................................................. -->
-
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/app.js"></script>
 
   <script>
+
     // Get the modal
     var modalc1 = document.getElementById("modalc1");
     var modalc2 = document.getElementById("modalc2");
+    var modalc3 = document.getElementById("modalc3");
 
     // Get the button that opens the modal
     var c1 = document.getElementById("card1");
     var c2 = document.getElementById("card2");
+    var c3 = document.getElementById("card3");
 
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    var page = document.getElementById("page");
+    var spanc1 = document.getElementsByClassName("closec1")[0];
+    var spanc2 = document.getElementsByClassName("closec2")[0];
+    var spanc3 = document.getElementsByClassName("closec3")[0];
 
     // When the user clicks the button, open the modal
     c1.onclick = function() {
       modalc1.style.display = "block";
     }
-
     c2.onclick = function() {
       modalc2.style.display = "block";
     }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modalc1.style.display = "none";
+    c3.onclick = function() {
+      modalc3.style.display = "block";
     }
 
-
+    // When the user clicks on <span> (x), close the modal
+    spanc1.onclick = function() {
+      modalc1.style.display = "none";
+    }
+    spanc2.onclick = function() {
+      modalc2.style.display = "none";
+    }
+    spanc3.onclick = function() {
+      modalc3.style.display = "none";
+    }
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
@@ -453,101 +452,118 @@
         modalc1.style.display = "none";
       }
     }
-  </script>
-
-
-  <!-- .............................................................. -->
-  <!-- .............................................................. -->
-  <!-- .............................................................. -->
-  <!-- .............................................................. -->
-
-
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/app.js"></script>
-
-  <script>
-    var height = window.innerHeight;
-    var element = document.getElementById("fixed-navbar");
-    var mq = window.matchMedia("(min-width: 700px)");
-
-    if (mq.matches) {
-      window.addEventListener("scroll", function() {
-        if (window.scrollY > height) {
-          element.style.opacity = "1";
-        } else if (window.scrollY <= height) {
-          element.style.opacity = "0";
-        }
-      });
-      window.addEventListener("scroll", function() {
-        if (window.scrollY >= height / 2) {
-          element.style.display = "block";
-        } else if (window.scrollY <= height / 2) {
-          element.style.display = "none";
-        }
-      });
+    window.onclick = function(event) {
+      if (event.target == modalc2) {
+        modalc2.style.display = "none";
+      }
+    }
+    window.onclick = function(event) {
+      if (event.target == modalc3) {
+        modalc3.style.display = "none";
+      }
     }
 
+// Function that control slideshow inside modal
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
 
+// Function that makes appear Fix Navbar after landing page scroll
+var height = window.innerHeight;
+var element = document.getElementById("fixed-navbar");
+var mq = window.matchMedia("(min-width: 700px)");
 
-
-
-    function closeMenu() {
-      document.getElementById("menu-btn").click();
+if (mq.matches) {
+  window.addEventListener("scroll", function() {
+    if (window.scrollY > height) {
+      element.style.opacity = "1";
+    } else if (window.scrollY <= height) {
+      element.style.opacity = "0";
     }
-  </script>
+  });
+  window.addEventListener("scroll", function() {
+    if (window.scrollY >= height / 2) {
+      element.style.display = "block";
+    } else if (window.scrollY <= height / 2) {
+      element.style.display = "none";
+    }
+  });
+}
 
-  <script>
-    // Cache selectors
-    var lastId,
-      topMenu = $("#main-nav"),
-      topMenuHeight = topMenu.outerHeight() + 15,
-      // All list items
-      menuItems = topMenu.find("a"),
-      // Anchors corresponding to menu items
-      scrollItems = menuItems.map(function() {
-        var item = $($(this).attr("href"));
-        if (item.length) {
-          return item;
-        }
-      });
+// Function that close Mobile Navbar after click in menu
+function closeMenu() {
+document.getElementById("menu-btn").click();
+}
 
-    // Bind click handler to menu items
-    // so we can get a fancy scroll animation
-    menuItems.click(function(e) {
-      var href = $(this).attr("href"),
-        offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
-      $('html, body').stop().animate({
-        scrollTop: offsetTop
-      }, 300);
-      e.preventDefault();
-    });
+// Function that update menu in scroll roll
+$(window).scroll(function() {
+  // Get container scroll position
+  var fromTop = $(this).scrollTop() + topMenuHeight;
+  // Get id of current scroll item
+  var cur = scrollItems.map(function() {
+    if ($(this).offset().top < fromTop)
+      return this;
+  });
+  // Get the id of the current element
+  cur = cur[cur.length - 1];
+  var id = cur && cur.length ? cur[0].id : "";
 
-    // Bind to scroll
-    $(window).scroll(function() {
-      // Get container scroll position
-      var fromTop = $(this).scrollTop() + topMenuHeight;
-
-      // Get id of current scroll item
-      var cur = scrollItems.map(function() {
-        if ($(this).offset().top < fromTop)
-          return this;
-      });
-      // Get the id of the current element
-      cur = cur[cur.length - 1];
-      var id = cur && cur.length ? cur[0].id : "";
-
-      if (lastId !== id) {
-        lastId = id;
-        // Set/remove active class
-        menuItems
-          .parent().removeClass("active")
-          .end().filter("[href='#" + id + "']").parent().addClass("active");
+  if (lastId !== id) {
+    lastId = id;
+    // Set/remove active class
+    menuItems
+      .parent().removeClass("active")
+      .end().filter("[href='#" + id + "']").parent().addClass("active");
+  }
+});
+// Cache selectors
+  var lastId,
+    topMenu = $("#main-nav"),
+    topMenuHeight = topMenu.outerHeight() + 15,
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function() {
+      var item = $($(this).attr("href"));
+      if (item.length) {
+        return item;
       }
     });
+
+// Function that animate scroll after click in menu link
+menuItems.click(function(e) {
+  var href = $(this).attr("href"),
+    offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+  $('html, body').stop().animate({
+    scrollTop: offsetTop
+  }, 300);
+  e.preventDefault();
+});
+
   </script>
-
-
-
 </body>
-
 </html>
