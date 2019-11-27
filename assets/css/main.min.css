@@ -849,7 +849,7 @@ strong {
   display: flex;
   align-items: flex-end;
   height: 350px;
-  background: linear-gradient(to bottom, rgba(38, 37, 37, 0.2), rgba(77, 77, 77, 0.4)), url("../img/massaQuilo.jpg") no-repeat;
+  background: linear-gradient(to bottom, rgba(38, 37, 37, 0.2), rgba(77, 77, 77, 0.4)), url("../img/oportunidades/mainProduct.png") no-repeat;
   background-size: cover;
   border-radius: 8px; }
 
@@ -862,10 +862,10 @@ strong {
       display: block; } }
 
 .prod1 {
-  background: linear-gradient(to bottom, rgba(38, 37, 37, 0.2), rgba(77, 77, 77, 0.4)), url("../img/silicones.jpg") no-repeat; }
+  background: linear-gradient(to bottom, rgba(38, 37, 37, 0.2), rgba(77, 77, 77, 0.4)), url("../img/oportunidades/product1.png") no-repeat; }
 
 .prod2 {
-  background: linear-gradient(to bottom, rgba(38, 37, 37, 0.2), rgba(77, 77, 77, 0.4)), url("../img/tubos.jpg") no-repeat; }
+  background: linear-gradient(to bottom, rgba(38, 37, 37, 0.2), rgba(77, 77, 77, 0.4)), url("../img/oportunidades/product2.png") no-repeat; }
 
 .smallProduct {
   display: flex;
