@@ -823,6 +823,9 @@ strong {
 .social-networks-logos {
   display: flex; }
 
+.social-networks-logo {
+  width: 50px; }
+
 .facebook-logo, .instagram-logo {
   padding: 5px; }
 
