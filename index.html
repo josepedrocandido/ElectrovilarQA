@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
-  <title>Electrovilar</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/css/main.min.css" />
@@ -39,7 +38,7 @@
 
 
     <nav class="mobileNavBar">
-      <a href="#home"><img class="logoPadding" src="./assets/img/logoMobileNavBar3.svg" height="25"></a>
+      <a href="#home"><img class="logoPadding" src="./assets/img/logoMobileNavBar3.svg" alt="Electrovilar Logo" title="Electrovilar Logo" height="25"></a>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
@@ -57,16 +56,18 @@
       <nav class="nav-home-layout">
         <div class="wrapper">
           <ul class="main-nav main-nav-home">
+            <li><a href="#oportunidades">Oportunidades</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#produtos">Produtos</a></li>
             <li><a href="#obras">Obras</a></li>
             <li><a class="noRightPadding" href="#contactos">Contactos</a></li>
+            ul
         </div>
       </nav>
 
       <div class="landing-page">
         <div class="landing-info">
-          <div class="company-logo"><img src="./assets/img/LandingPage.svg"><br></div>
+          <div class="company-logo"><img src="./assets/img/LandingPage.svg" alt="Electrovilar Logo" title="Electrovilar Logo"><br></div>
           <h1 class="company-slogan">As melhores <b><a href="#obras">obras</a></b> com os melhores <b><a href="#produtos">produtos.</a></b></h1>
           <div class="social-networks-logos">
             <a href="https://www.facebook.com/electrovilar.pt" target="_blank" class="facebook-logo"><svg width="50px" height="50px" viewBox="0 0 35 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -118,16 +119,17 @@
     <nav class="nav-fix-layout" id="fixed-navbar">
       <div class="wrapper">
         <ul id="main-nav" class="main-nav-fix main-nav">
-          <a class="noLeftPadding" href="#home"><img class="logo-menu" src="./assets/img/LandingPage.svg" height="70"></a>
+          <a class="noLeftPadding" href="#home"><img class="logo-menu" src="./assets/img/LandingPage.svg" height="70" alt="Electrovilar Logo" title="Electrovilar Logo"></a>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#produtos">Produtos</a></li>
           <li><a href="#obras">Obras</a></li>
           <li><a class="noRightPadding" href="#contactos">Contactos</a></li>
+        </ul>
       </div>
     </nav>
 
     <!-- Oportunidades Section -->
-    <section class="oportunidades">
+    <section id="oportunidades" class="oportunidades">
       <div class="wrapper">
         <h2 class="sectionTitle">Oportunidades</h2>
         <div class="mainProduct">
@@ -285,10 +287,11 @@
       </div>
     </section>
 
+
     <section id="contactos" class="newsletterBck">
       <div class="newsletter">
         <h3 class="newsletterText">Subscreva a nossa <b>Newsletter</b></h3>
-        <button type="button" name="button"><a href="https://mailchi.mp/40ef32bd0d3a/electrovilar" target="_blank">Subscrever</a></button>
+        <button type="button" name="button" onclick="window.open('https://mailchi.mp/40ef32bd0d3a/electrovilar', '_blank'); return false;">Subscrever</button>
       </div>
   </section>
 
@@ -340,7 +343,8 @@
   <section class="footer">
     <div class="wrapper">
       <p class="footerText">
-        Copyright © 2020 Electrovilar. Todos os direitos reservados. | Designed by <a href="https://josepedrocandido.github.io/MyWebsite/" target="_blank">José Cândido</a> in Lisbon.</p>
+        Em caso de litígio o consumidor pode recorrer a uma Entidade de Resolução Alternativa de Litígios de consumo: CNIACC - Centro Nacional de Informação e Arbitragem de Conflitos de Consumo. Mais informações em <a href="https://www.cniacc.pt/pt">Portal do Consumidor</a><br><br>
+        Copyright © 2020 Electrovilar | Designed by <a href="https://josepedrocandido.pt/" target="_blank">José Cândido</a>
     </div>
   </section>
 
@@ -359,29 +363,23 @@
 
         <div class="mainImage">
           <div class="mySlides">
-            <img class="mImage" src="./assets/img/Card1/card1MainImage1.jpg">
+            <img class="mImage" src="./assets/img/Card1/card1MainImage1.jpg" alt="Parque Solar Martim Longo" title="Parque Solar Martim Longo">
           </div>
         </div>
 
         <div class="mainImage">
           <div class="mySlides">
-            <img class="mImage" src="./assets/img/Card1/card1MainImage2.jpg">
+            <img class="mImage" src="./assets/img/Card1/card1MainImage2.jpg" alt="Parque Solar Martim Longo" title="Parque Solar Martim Longo">
           </div>
         </div>
 
         <div class="photosGallery photosGalleryG">
-          <div><img class="demo cursor" src="./assets/img/Card1/card1SmallImage1.jpg" style="height:100%" onclick="currentSlide(1)" alt="The Woods"></div>
-          <div><img class="demo cursor" src="./assets/img/Card1/card1SmallImage2.jpg" style="height:100%" onclick="currentSlide(2)" alt="The Woods"></div>
+          <div><img class="demo cursor" src="./assets/img/Card1/card1SmallImage1.jpg" style="height:100%" onclick="currentSlide(1)" alt="Parque Solar Martim Longo" title="Parque Solar Martim Longo"></div>
+          <div><img class="demo cursor" src="./assets/img/Card1/card1SmallImage2.jpg" style="height:100%" onclick="currentSlide(2)" alt="Parque Solar Martim Longo" title="Parque Solar Martim Longo"></div>
         </div>
         <p class="textG">
-          A Electrovilar é uma empresa do ramo das energias, com sede na
-          fronteira de Portugal com Espanha. Desde início tem desenvolvido
-          actividade ao longo do eixo Guarda / Salamanca, demonstrando desde
-          cedo a sua apetência para o cruzamento de serviços com o mercado
-          internacional, nomeadamente com a Espanha. Esse facto tem sido
-          reforçado com o desenvolvimento crecente das energias renováveis.
         </p>
-        <button class="closec1 closeG backButton" type="" name="">Voltar</button>
+        <button class="closec1 closeG backButton" type="button" name="">Voltar</button>
 
       </div>
     </div>
@@ -394,16 +392,15 @@
         <h2 class="photoTitle">Carrefour Market</h2>
 
         <div class="mainImage">
-            <img class="mImage" src="./assets/img/Card2/card2MainImage1.jpg">
+            <img class="mImage" src="./assets/img/Card2/card2MainImage1.jpg" alt="Carrefour Market" title="Carrefour Market">
         </div>
 
         <div class="photosGallery photosGalleryG">
-          <div><img class="demo cursor" src="./assets/img/Card2/card2SmallImage.jpg" style="height:100%; opacity: 1;" onclick="currentSlide(1)" alt="The Woods"></div>
+          <div><img class="demo cursor" src="./assets/img/Card2/card2SmallImage.jpg" style="height:100%; opacity: 1;" onclick="currentSlide(1)" alt="Carrefour Market" title="Carrefour Market"></div>
         </div>
         <p class="textG">
-          Carrefour Market (...)
         </p>
-        <button class="closec2 closeG backButton" type="" name="">Voltar</button>
+        <button class="closec2 closeG backButton" type="button" name="">Voltar</button>
 
       </div>
     </div>
@@ -416,16 +413,15 @@
         <h2 class="photoTitle">Torre de Iluminação</h2>
 
         <div class="mainImage">
-            <img class="mImage" src="./assets/img/Card3/card3MainImage1.jpg">
+            <center><img class="" src="./assets/img/Card3/card3MainImage1.jpg" alt="Torre de Iluminação" title="Torre de Iluminação"></center>
         </div>
 
         <div class="photosGallery photosGalleryG">
-          <div><img class="demo cursor" src="./assets/img/Card3/card3SmallImage.jpg" style="height:100%; opacity: 1;" onclick="currentSlide(1)" alt="The Woods"></div>
+          <div><img class="demo cursor" src="./assets/img/Card3/card3SmallImage.jpg" style="height:100%; opacity: 1;" onclick="currentSlide(1)" alt="Torre de Iluminação" title="Torre de Iluminação"></div>
         </div>
         <p class="textG">
-          Carrefour Market (...)
         </p>
-        <button class="closec3 closeG backButton" type="" name="">Voltar</button>
+        <button class="closec3 closeG backButton" type="button" name="">Voltar</button>
 
       </div>
     </div>
